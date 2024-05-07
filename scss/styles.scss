@@ -1,0 +1,234 @@
+@import"./utilidades/variables";
+@import"./utilidades/listas";
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+@font-face {
+    font-family: qebil;
+    src: url(../font/QEBIL.otf);
+}
+
+@font-face {
+    font-family: matroska;
+    src: url(../font/matroska-rppg6.ttf);
+}
+
+@font-face {
+    font-family: roboto;
+    src: url(../font/Roboto-Light.ttf);
+}
+
+@font-face {
+    font-family: medium;
+    src: url(../font/Roboto-Medium.ttf);
+}
+
+body {
+    background-color: $color-principal;
+}
+/*header*/
+.navbar {
+    display: flex;
+    text-align: center;
+    align-items: center;
+    margin: 0px 760px 0px 0px;
+
+    .navbar-brand {
+        margin: 0;
+        padding: 0;
+    }
+
+    img {
+        width: 15%;
+        height: 15%;
+        margin-top: 10px;
+        margin-right: 500px;
+        margin-left: 25px;
+        margin-bottom: 15px;
+    }
+}
+/*estilos de main*/
+main {
+    h1 {
+        font-size: 4em;
+        font-family: qebil;
+        color: rgb(98, 35, 170);
+        justify-content: center;
+        text-align: center;
+        margin: 20px 50px 100px 50px;
+    }
+
+    h3 {
+        font-size: 3em;
+        font-family: matroska;
+        font-size: small;
+        margin: 20px;
+        color: beige;
+    }
+
+    section {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        .video {
+            justify-self: center;
+            align-self: center;
+            place-self: center;
+        }
+    }
+}
+
+/*extra extra*/
+section {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 50px;
+    color: beige;
+
+    p {
+        font-size: 15px;
+        font-family: roboto;
+        color: beige;
+        text-align: center;
+    }
+
+    .carta1 {
+        text-align: center;
+        width: 500px;
+        height: 600px;
+        background-image: url(../media/fireball.png);
+        background-size: cover;
+        background-repeat: no-repeat;
+        padding: 70px;
+        margin: 30px;
+        border-radius: 30px;
+    }
+
+}
+
+.carta2 {
+    text-align: center;
+    width: 500px;
+    height: 600px;
+    background-image: url(../media/img4.jpeg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding: 70px;
+    margin: 30px;
+    border-radius: 20px;
+}
+
+.carta3 {
+    text-align: center;
+    width: 500px;
+    height: 600px;
+    background-image: url(../media/img2.jpeg);
+    background-size: cover;
+    padding: 70px;
+    margin: 30px;
+    border-radius: 20px;
+}
+
+.click {
+    font-size: 15px;
+    font-weight: lighter;
+    padding: 10px 20px;
+    border: 1px solid rgba(0, 0, 0, 0.5);
+    box-shadow: 2px 20px 10px rgba(0, 0, 0, 0.5);
+    background-color: rgb(98, 35, 170);
+    color: beige;
+    border-radius: 10px;
+    text-align: center;
+
+
+    :hover {
+        background-color: black;
+    }
+
+}
+
+/*redes*/
+div {
+    .redes {
+        margin-top: 400px;
+        margin-bottom: 0px;
+    }
+
+    a {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        margin-top: 3px;
+        color: beige;
+        font-family: medium;
+        text-decoration: none;
+    }
+
+    :hover {
+        color: black;
+    }
+}
+
+/*estilos de galeria*/
+
+.galeria {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 20px;
+
+    img {
+        width: 500px;
+        height: 500px;
+        margin: 20px;
+        border-radius: 30px;
+    }
+}
+
+/*footer*/
+footer {
+    font-family: roboto;
+    color: beige;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    gap: 5px;
+    margin-top: 10px;
+    margin-bottom: 0px;
+}
+
+/*estilo de tour*/
+.tour {
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 200px;
+
+    ul {
+        justify-content: center;
+        align-items: center;
+
+        li {
+            font-family: roboto;
+            font-size: small;
+            list-style: none;
+
+        }
+    }
+}
+
+.main {
+    section {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+}
+
+@import "html/discografia";
